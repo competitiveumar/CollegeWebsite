@@ -1,0 +1,202 @@
+.academics-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 2rem 1rem;
+  width: 100%;
+}
+
+.intro-text {
+  max-width: 800px;
+  margin: 0 auto 3rem;
+  text-align: center;
+}
+
+.programs-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+  margin-bottom: 3rem;
+}
+
+.program-card {
+  flex: 1;
+  min-width: 300px;
+  background-color: #fff;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+}
+
+.program-card:hover {
+  transform: translateY(-5px);
+}
+
+.program-image {
+  height: 200px;
+  overflow: hidden;
+}
+
+.program-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.3s ease;
+}
+
+.program-card:hover .program-image img {
+  transform: scale(1.1);
+}
+
+.program-content {
+  padding: 1.5rem;
+}
+
+.program-content h3 {
+  margin-top: 0;
+  margin-bottom: 1rem;
+  color: #1a237e;
+}
+
+.program-content p {
+  margin-bottom: 1.5rem;
+  color: #444;
+}
+
+.learn-more-btn {
+  background-color: #1a237e;
+  color: white;
+  border: none;
+  padding: 0.5rem 1rem;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.learn-more-btn:hover {
+  background-color: #303f9f;
+}
+
+.academic-resources {
+  background-color: #f5f5f5;
+  padding: 2rem;
+  border-radius: 10px;
+  margin-top: 2rem;
+}
+
+.academic-resources h3 {
+  margin-top: 0;
+  margin-bottom: 1.5rem;
+  color: #1a237e;
+}
+
+.academic-resources ul {
+  padding-left: 1.5rem;
+}
+
+.academic-resources li {
+  margin-bottom: 0.5rem;
+  line-height: 1.6;
+}
+
+/* Schedule table styling */
+.schedule-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 2rem 0;
+}
+
+.schedule-table th,
+.schedule-table td {
+  padding: 0.8rem;
+  text-align: left;
+  border-bottom: 1px solid #ddd;
+}
+
+.schedule-table th {
+  background-color: #1a237e;
+  color: white;
+}
+
+.schedule-table tr:nth-child(even) {
+  background-color: #f5f5f5;
+}
+
+/* Faculty section */
+.faculty-section {
+  margin-top: 3rem;
+}
+
+.faculty-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  gap: 2rem;
+}
+
+/* Responsive styles */
+@media (max-width: 992px) {
+  .program-card {
+    flex-basis: calc(50% - 1rem);
+  }
+  
+  .faculty-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+@media (max-width: 768px) {
+  .academics-container {
+    padding: 1.5rem 1rem;
+  }
+  
+  .program-card {
+    flex-basis: 100%;
+    min-width: 250px;
+  }
+  
+  .program-image {
+    height: 180px;
+  }
+  
+  .academic-resources {
+    padding: 1.5rem;
+  }
+  
+  .faculty-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1.5rem;
+  }
+  
+  /* Make tables responsive */
+  .schedule-table {
+    display: block;
+    width: 100%;
+    overflow-x: auto;
+  }
+}
+
+@media (max-width: 480px) {
+  .intro-text {
+    margin-bottom: 2rem;
+  }
+  
+  .program-content {
+    padding: 1.2rem;
+  }
+  
+  .program-image {
+    height: 160px;
+  }
+  
+  .faculty-grid {
+    grid-template-columns: 1fr;
+  }
+  
+  .learn-more-btn {
+    width: 100%;
+    text-align: center;
+  }
+}
+.program-card {
+  min-width: 100%;
+}

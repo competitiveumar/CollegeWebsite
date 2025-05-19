@@ -1,0 +1,303 @@
+.admissions-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 2rem 1rem;
+  width: 100%;
+}
+
+.admissions-banner {
+  position: relative;
+  margin-bottom: 3rem;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.admissions-banner img {
+  width: 100%;
+  height: 400px;
+  object-fit: cover;
+  filter: brightness(70%);
+}
+
+.banner-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  text-align: center;
+  padding: 2rem;
+}
+
+.banner-overlay h3 {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+  color: white;
+}
+
+.banner-overlay p {
+  font-size: 1.2rem;
+  margin-bottom: 2rem;
+  max-width: 600px;
+}
+
+.apply-btn {
+  background-color: #1a237e;
+  color: white;
+  border: none;
+  padding: 0.8rem 1.5rem;
+  border-radius: 5px;
+  font-size: 1.1rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.apply-btn:hover {
+  background-color: #303f9f;
+}
+
+.admission-process {
+  margin-bottom: 3rem;
+}
+
+.admission-process h3 {
+  text-align: center;
+  margin-bottom: 2rem;
+  color: #1a237e;
+}
+
+.process-steps {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.5rem;
+  justify-content: center;
+}
+
+.step-card {
+  background-color: white;
+  border-radius: 10px;
+  padding: 2rem;
+  text-align: center;
+  flex: 1;
+  min-width: 250px;
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1);
+}
+
+.step-icon {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+}
+
+.step-card h4 {
+  color: #1a237e;
+  margin-bottom: 1rem;
+}
+
+.step-card p {
+  color: #555;
+}
+
+.requirements-section {
+  background-color: #f5f5f5;
+  padding: 2rem;
+  border-radius: 10px;
+  margin-bottom: 3rem;
+}
+
+.requirements-section h3 {
+  margin-top: 0;
+  margin-bottom: 1.5rem;
+  color: #1a237e;
+}
+
+.requirements-section ul {
+  padding-left: 1.5rem;
+  margin-bottom: 1.5rem;
+}
+
+.requirements-section li {
+  margin-bottom: 0.5rem;
+  line-height: 1.6;
+}
+
+.note {
+  background-color: #e8eaf6;
+  padding: 1rem;
+  border-radius: 5px;
+  border-left: 4px solid #1a237e;
+}
+
+.key-dates {
+  margin-bottom: 3rem;
+}
+
+.key-dates h3 {
+  text-align: center;
+  margin-bottom: 2rem;
+  color: #1a237e;
+}
+
+.dates-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.5rem;
+}
+
+.date-item {
+  background-color: white;
+  border-radius: 10px;
+  padding: 1.5rem;
+  text-align: center;
+  flex: 1;
+  min-width: 180px;
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1);
+}
+
+.date-item h4 {
+  color: #1a237e;
+  margin-bottom: 0.5rem;
+}
+
+.date-item p {
+  color: #555;
+}
+
+.contact-info {
+  background-color: #1a237e;
+  color: white;
+  padding: 2rem;
+  border-radius: 10px;
+}
+
+.contact-info h3 {
+  color: white;
+  margin-top: 0;
+  margin-bottom: 1.5rem;
+}
+
+.contact-info p {
+  color: white;
+  margin-bottom: 0.5rem;
+}
+
+.contact-info strong {
+  font-weight: 600;
+}
+
+/* Application form styles */
+.application-form {
+  background-color: white;
+  border-radius: 10px;
+  padding: 2rem;
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1);
+  margin-bottom: 3rem;
+}
+
+.form-row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.5rem;
+  margin-bottom: 1.5rem;
+}
+
+.form-group {
+  flex: 1;
+  min-width: 250px;
+}
+
+/* Tuition and fees section */
+.tuition-fees {
+  margin-bottom: 3rem;
+}
+
+.fees-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 1.5rem;
+}
+
+/* Responsive styles */
+@media (max-width: 992px) {
+  .step-card {
+    flex-basis: calc(50% - 1rem);
+  }
+  
+  .banner-overlay h3 {
+    font-size: 2.2rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .admissions-container {
+    padding: 1.5rem 1rem;
+  }
+  
+  .admissions-banner img {
+    height: 300px;
+  }
+  
+  .banner-overlay h3 {
+    font-size: 1.8rem;
+  }
+  
+  .banner-overlay p {
+    font-size: 1rem;
+  }
+  
+  .step-card {
+    flex-basis: 100%;
+    min-width: 200px;
+    padding: 1.5rem;
+  }
+  
+  .application-form {
+    padding: 1.5rem;
+  }
+  
+  /* Make tables responsive */
+  .fees-table {
+    display: block;
+    width: 100%;
+    overflow-x: auto;
+  }
+}
+
+@media (max-width: 480px) {
+  .admissions-banner img {
+    height: 250px;
+  }
+  
+  .banner-overlay h3 {
+    font-size: 1.5rem;
+  }
+  
+  .banner-overlay p {
+    margin-bottom: 1.5rem;
+  }
+  
+  .apply-btn {
+    padding: 0.7rem 1.2rem;
+    font-size: 1rem;
+  }
+  
+  .step-card {
+    padding: 1.2rem;
+  }
+  
+  .step-icon {
+    font-size: 2rem;
+  }
+  
+  .application-form {
+    padding: 1.2rem;
+  }
+  
+  .form-group {
+    min-width: 100%;
+  }
+}

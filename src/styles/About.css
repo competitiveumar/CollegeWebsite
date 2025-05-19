@@ -1,0 +1,196 @@
+.about-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 2rem 1rem;
+  width: 100%;
+}
+
+.about-content {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+  margin-bottom: 3rem;
+}
+
+.about-image {
+  flex: 1;
+  min-width: 300px;
+}
+
+.about-image img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  border-radius: 10px;
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1);
+}
+
+.about-text {
+  flex: 1;
+  min-width: 300px;
+}
+
+.about-text h3 {
+  margin-top: 0;
+  margin-bottom: 1rem;
+  color: #1a237e;
+}
+
+.about-text p {
+  margin-bottom: 1.5rem;
+  line-height: 1.6;
+}
+
+.about-text ul {
+  padding-left: 1.5rem;
+}
+
+.about-text li {
+  margin-bottom: 0.5rem;
+}
+
+.about-stats {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 1.5rem;
+  margin-top: 3rem;
+}
+
+.stat-item {
+  background-color: #f5f5f5;
+  border-radius: 10px;
+  padding: 1.5rem;
+  text-align: center;
+  flex: 1;
+  min-width: 150px;
+  transition: transform 0.3s ease;
+}
+
+.stat-item:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+.stat-item h3 {
+  font-size: 2.5rem;
+  color: #1a237e;
+  margin-bottom: 0.5rem;
+}
+
+.stat-item p {
+  color: #555;
+  font-weight: 500;
+}
+
+/* Mission and Vision section */
+.mission-vision {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+  margin-bottom: 3rem;
+}
+
+.mission, .vision {
+  flex: 1;
+  min-width: 300px;
+  background-color: white;
+  border-radius: 10px;
+  padding: 2rem;
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1);
+}
+
+.mission h3, .vision h3 {
+  color: #1a237e;
+  margin-top: 0;
+  margin-bottom: 1rem;
+}
+
+/* Faculty section */
+.faculty-section {
+  margin-bottom: 3rem;
+}
+
+.faculty-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  gap: 2rem;
+}
+
+.faculty-card {
+  background-color: white;
+  border-radius: 10px;
+  padding: 1.5rem;
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  transition: transform 0.3s ease;
+}
+
+.faculty-card:hover {
+  transform: translateY(-5px);
+}
+
+.faculty-image {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin: 0 auto 1rem;
+}
+
+/* Media queries for responsive design */
+@media (max-width: 992px) {
+  .stat-item {
+    min-width: 200px;
+    flex-basis: calc(50% - 1rem);
+  }
+  
+  .faculty-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+@media (max-width: 768px) {
+  .about-container {
+    padding: 1.5rem 1rem;
+  }
+  
+  .about-content {
+    flex-direction: column;
+  }
+  
+  .about-image, .about-text {
+    width: 100%;
+  }
+  
+  .mission-vision {
+    flex-direction: column;
+  }
+  
+  .faculty-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1.5rem;
+  }
+  
+  .stat-item h3 {
+    font-size: 2rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .stat-item {
+    flex-basis: 100%;
+  }
+  
+  .faculty-grid {
+    grid-template-columns: 1fr;
+  }
+  
+  .faculty-card {
+    padding: 1.2rem;
+  }
+  
+  .stat-item h3 {
+    font-size: 1.8rem;
+  }
+} 
