@@ -94,7 +94,7 @@ npm test -- --watchAll=false
 
 1. Clone the repository
    ```bash
-   
+   git clone https://github.com/competitiveumar/CollegeWebsite.git
    ```
 
 2. Navigate to the project directory
